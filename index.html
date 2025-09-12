@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>C# & Selenium Automation Training</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/white.css" id="theme">
+  <style>
+    .trainer-notes { color: #007acc; font-style: italic; }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section data-markdown="./slides/01-intro-csharp.md" data-separator="^---$" data-separator-vertical="^--$" data-separator-notes="^> Note:"></section>
+      <section data-markdown="./slides/02-unit-testing.md" data-separator="^---$" data-separator-vertical="^--$" data-separator-notes="^> Note:"></section>
+      <section data-markdown="./slides/03-selenium.md" data-separator="^---$" data-separator-vertical="^--$" data-separator-notes="^> Note:"></section>
+      <section data-markdown="./slides/04-pom.md" data-separator="^---$" data-separator-vertical="^--$" data-separator-notes="^> Note:"></section>
+      <section data-markdown="./slides/05-bdd-specflow.md" data-separator="^---$" data-separator-vertical="^--$" data-separator-notes="^> Note:"></section>
+      <section data-markdown="./slides/06-ci-cd.md" data-separator="^---$" data-separator-vertical="^--$" data-separator-notes="^> Note:"></section>
+    </div>
+  </div>
+    <!-- Highlight.js CSS for code highlighting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/default.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js"></script>
+    <script>
+      Reveal.initialize({
+        hash: true,
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+        slideNumber: true,
+        navigationMode: 'linear',
+        transition: 'slide',
+        highlight: {
+          highlightOnLoad: true,
+        }
+      });
+      // No need for manual hljs.highlightElement calls; RevealHighlight handles it.
+    </script>
+</body>
+</html>
