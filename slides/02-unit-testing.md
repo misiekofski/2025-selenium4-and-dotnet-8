@@ -1,4 +1,4 @@
-# Unit Testing with NUnit/xUnit
+# Unit Testing - NUnit
 ---
 ## Why Unit Test?
 - Catch bugs early
