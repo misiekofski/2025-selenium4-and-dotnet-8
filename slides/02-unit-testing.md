@@ -4,8 +4,6 @@
 - Wczesne wykrywanie błędów
 - Zapewnienie jakości kodu
 - Umożliwienie refaktoryzacji
-
-> Notatka: Omów korzyści z automatyzacji testów.
 ---
 ## Tworzenie projektu testowego
 - Użyj Visual Studio lub CLI
