@@ -1,15 +1,15 @@
 # Page Object Model (POM)
 ---
-## What is POM?
-- Design pattern for test automation
-- Encapsulates page elements and actions
-- Improves maintainability and readability
+## Czym jest POM?
+- Wzorzec projektowy dla automatyzacji testów
+- Enkapsuluje elementy strony i akcje
+- Poprawia czytelność i łatwość utrzymania
 
-> Note: Stress the importance of clean test architecture.
+> Notatka: Podkreśl znaczenie czystej architektury testów.
 ---
-## POM Structure
-- Page classes for each web page
-- Methods for actions (e.g., Login, Search)
+## Struktura POM
+- Klasy stron dla każdej podstrony
+- Metody dla akcji (np. logowanie, wyszukiwanie)
 
 ```csharp
 public class LoginPage {
@@ -29,12 +29,12 @@ public class LoginPage {
 }
 ```
 --
-### Exercise
-- Create a page object for a search page with methods to enter a query and submit.
+### Ćwiczenie
+- Utwórz obiekt strony dla wyszukiwarki z metodami wpisywania zapytania i zatwierdzania.
 ---
-## Using POM in Tests
-- Instantiate page objects in test classes
-- Call page methods for actions
+## Użycie POM w testach
+- Tworzenie obiektów stron w klasach testowych
+- Wywoływanie metod strony do akcji
 
 ```csharp
 [Test]
@@ -46,7 +46,7 @@ public void LoginTest() {
 }
 ```
 --
-### Exercise
-- Refactor an existing test to use POM.
+### Ćwiczenie
+- Przepisz istniejący test, aby używał POM.
 
-> Note: Encourage students to separate test logic from page details.
+> Notatka: Zachęć do rozdzielania logiki testów od szczegółów strony.

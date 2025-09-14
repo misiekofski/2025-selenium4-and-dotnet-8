@@ -1,28 +1,28 @@
-# Unit Testing - NUnit
+# Testy jednostkowe - NUnit
 ---
-## Why Unit Test?
-- Catch bugs early
-- Ensure code quality
-- Enable refactoring
+## Dlaczego testy jednostkowe?
+- Wczesne wykrywanie błędów
+- Zapewnienie jakości kodu
+- Umożliwienie refaktoryzacji
 
-> Note: Discuss benefits of automated testing.
+> Notatka: Omów korzyści z automatyzacji testów.
 ---
-## Setting Up a Test Project
-- Use Visual Studio or CLI
-- Add NUnit/xUnit via NuGet
+## Tworzenie projektu testowego
+- Użyj Visual Studio lub CLI
+- Dodaj NUnit/xUnit przez NuGet
 
 ```csharp
-// CLI example
+// Przykład CLI
 // dotnet new nunit -n MyTests
 // dotnet add package NUnit
 ```
 --
-### Exercise
-- Create a new test project using CLI or Visual Studio.
+### Ćwiczenie
+- Utwórz nowy projekt testowy za pomocą CLI lub Visual Studio.
 ---
-## Writing Basic Tests
-- Test methods marked with `[Test]` (NUnit) or `[Fact]` (xUnit)
-- Use assertions to check results
+## Pisanie podstawowych testów
+- Metody testowe oznaczane `[Test]` (NUnit) lub `[Fact]` (xUnit)
+- Używaj asercji do sprawdzania wyników
 
 ```csharp
 using NUnit.Framework;
@@ -37,10 +37,10 @@ public class CalculatorTests {
 }
 ```
 --
-### Exercise
-- Write a test for a method that multiplies two numbers.
+### Ćwiczenie
+- Napisz test dla metody mnożącej dwie liczby.
 ---
-## Common Assertions
+## Najczęstsze asercje
 - `Assert.AreEqual(expected, actual)`
 - `Assert.IsTrue(condition)`
 - `Assert.IsNull(object)`
@@ -50,27 +50,27 @@ Assert.IsTrue(5 > 3);
 Assert.IsNull(null);
 ```
 --
-### Exercise
-- Try different assertions in your tests.
+### Ćwiczenie
+- Wypróbuj różne asercje w swoich testach.
 ---
-## Test Lifecycle
-- Setup/Teardown methods: `[SetUp]`, `[TearDown]`
+## Cykl życia testów
+- Metody przygotowania/zakończenia: `[SetUp]`, `[TearDown]`
 
 ```csharp
 [TestFixture]
 public class SampleTests {
     [SetUp]
     public void Init() {
-        // Runs before each test
+        // Wykonuje się przed każdym testem
     }
     [TearDown]
     public void Cleanup() {
-        // Runs after each test
+        // Wykonuje się po każdym teście
     }
 }
 ```
 --
-### Exercise
-- Add setup/teardown to your test class.
+### Ćwiczenie
+- Dodaj metody setup/teardown do swojej klasy testowej.
 
-> Note: Encourage students to run tests and interpret results.
+> Notatka: Zachęć uczestników do uruchamiania testów i interpretacji wyników.

@@ -1,37 +1,37 @@
-# Introduction to Selenium WebDriver
+# Wprowadzenie do Selenium WebDriver
 ---
-## What is Selenium?
-- Open-source browser automation tool
-- Supports multiple languages (C#, Java, Python)
-- Automates web applications for testing
+## Czym jest Selenium?
+- Otwarty, darmowy system do automatyzacji przeglądarki
+- Wspiera wiele języków (C#, Java, Python)
+- Automatyzuje testowanie aplikacji webowych
 
-> Note: Highlight Selenium's popularity in automation.
+> Notatka: Podkreśl popularność Selenium w automatyzacji.
 ---
-## Setting Up Selenium in C#
-- Install Selenium WebDriver via NuGet
-- Add browser driver (e.g., ChromeDriver)
+## Instalacja Selenium w C#
+- Zainstaluj Selenium WebDriver przez NuGet
+- Dodaj sterownik przeglądarki (np. ChromeDriver)
 
 ```csharp
-// NuGet Package Manager
+// Menedżer pakietów NuGet
 // Install-Package Selenium.WebDriver
-// Download ChromeDriver and add to PATH
+// Pobierz ChromeDriver i dodaj do PATH
 ```
 --
-### Exercise
-- Set up a simple Selenium project in Visual Studio.
+### Ćwiczenie
+- Skonfiguruj prosty projekt Selenium w Visual Studio.
 ---
-## Locating Elements
-- By ID, Name, Class, XPath, CSS Selector
+## Lokalizowanie elementów
+- Po ID, Name, Class, XPath, CSS Selector
 
 ```csharp
 IWebElement searchBox = driver.FindElement(By.Name("q"));
 ```
 --
-### Exercise
-- Locate and print the text of a button on a web page.
+### Ćwiczenie
+- Zlokalizuj i wypisz tekst przycisku na stronie.
 ---
-## Basic Browser Automation
-- Open browser, navigate, interact
+## Podstawowa automatyzacja przeglądarki
+- Otwieranie przeglądarki, nawigacja, interakcje
 
 ```csharp
 using OpenQA.Selenium;
@@ -46,7 +46,7 @@ class SeleniumDemo {
 }
 ```
 --
-### Exercise
-- Write code to open a page, enter text, and click a button.
+### Ćwiczenie
+- Napisz kod otwierający stronę, wpisujący tekst i klikający przycisk.
 
-> Note: Discuss best practices for browser cleanup.
+> Notatka: Omów dobre praktyki zamykania przeglądarki.

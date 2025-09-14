@@ -1,30 +1,30 @@
-# BDD with SpecFlow
+# BDD z SpecFlow
 ---
-## What is BDD?
-- Behavior Driven Development
-- Collaboration between devs, testers, and business
-- Uses natural language for test scenarios
+## Czym jest BDD?
+- Behavior Driven Development (Rozwój sterowany zachowaniem)
+- Współpraca programistów, testerów i biznesu
+- Scenariusze testowe w języku naturalnym
 
-> Note: Show how BDD bridges communication gaps.
+> Notatka: Pokaż jak BDD łączy komunikację między zespołami.
 ---
-## SpecFlow Overview
-- C# BDD framework
-- Uses Gherkin syntax (`Given`, `When`, `Then`)
-- Integrates with Selenium
+## SpecFlow - przegląd
+- Framework BDD dla C#
+- Składnia Gherkin (`Given`, `When`, `Then`)
+- Integracja z Selenium
 
 ```gherkin
 Feature: Login
-  Scenario: Successful login
-    Given user is on login page
-    When user enters valid credentials
-    Then user is logged in
+    Scenario: Successful login
+        Given user is on login page
+        When user enters valid credentials
+        Then user is logged in
 ```
 --
-### Exercise
-- Write a feature file for searching a product.
+### Ćwiczenie
+- Napisz plik feature dla wyszukiwania produktu.
 ---
-## Step Definitions
-- Map Gherkin steps to C# methods
+## Definicje kroków
+- Mapowanie kroków Gherkin na metody C#
 
 ```csharp
 [Given("user is on login page")]
@@ -33,11 +33,11 @@ public void GivenUserIsOnLoginPage() {
 }
 ```
 --
-### Exercise
-- Implement step definitions for your search feature.
+### Ćwiczenie
+- Zaimplementuj definicje kroków dla wyszukiwania.
 ---
-## Integrating with Selenium
-- Use Selenium in step definitions
+## Integracja z Selenium
+- Użycie Selenium w definicjach kroków
 
 ```csharp
 [When("user enters valid credentials")]
@@ -48,7 +48,7 @@ public void WhenUserEntersValidCredentials() {
 }
 ```
 --
-### Exercise
-- Automate a search scenario using SpecFlow and Selenium.
+### Ćwiczenie
+- Zautomatyzuj scenariusz wyszukiwania z użyciem SpecFlow i Selenium.
 
-> Note: Discuss how BDD improves test coverage and collaboration.
+> Notatka: Omów jak BDD poprawia pokrycie testami i współpracę.
