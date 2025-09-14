@@ -14,21 +14,51 @@
 ```csharp
 // Menedżer pakietów NuGet
 // Install-Package Selenium.WebDriver
-// Pobierz ChromeDriver i dodaj do PATH
 ```
 --
 ### Ćwiczenie
 - Skonfiguruj prosty projekt Selenium w Visual Studio.
 ---
 ## Lokalizowanie elementów
+## Lokalizowanie elementów
 - Po ID, Name, Class, XPath, CSS Selector
 
+---
+### Wyszukiwanie po ID
+- Najczęstszy sposób, gdy element ma unikalny identyfikator.
 ```csharp
-IWebElement searchBox = driver.FindElement(By.Name("q"));
+IWebElement element = driver.FindElement(By.Id("loginBtn"));
 ```
 --
 ### Ćwiczenie
-- Zlokalizuj i wypisz tekst przycisku na stronie.
+- Znajdź przycisk logowania po ID i wypisz jego tekst.
+---
+### Wyszukiwanie po Name
+- Używane, gdy element ma atrybut `name`.
+```csharp
+IWebElement element = driver.FindElement(By.Name("username"));
+```
+--
+### Ćwiczenie
+- Znajdź pole użytkownika po Name i wpisz tekst.
+---
+### Wyszukiwanie po XPath
+- Pozwala na zaawansowane wyszukiwanie wg struktury DOM.
+```csharp
+IWebElement element = driver.FindElement(By.XPath("//input[@type='password']"));
+```
+--
+### Ćwiczenie
+- Znajdź pole hasła po XPath i wpisz tekst.
+---
+### Wyszukiwanie po CSS Selector
+- Umożliwia wyszukiwanie wg selektorów CSS.
+```csharp
+IWebElement element = driver.FindElement(By.CssSelector(".form-login .submit-btn"));
+```
+--
+### Ćwiczenie
+- Znajdź przycisk submit po CSS Selector i kliknij go.
 ---
 ## Podstawowa automatyzacja przeglądarki
 - Otwieranie przeglądarki, nawigacja, interakcje
