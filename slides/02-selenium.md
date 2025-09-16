@@ -1,11 +1,11 @@
 # Wprowadzenie do Selenium WebDriver
----
+--
 ## Czym jest Selenium?
 - Otwarty, darmowy system do automatyzacji przeglądarki
 - Wspiera wiele języków (C#, Java, Python)
 - Automatyzuje testowanie aplikacji webowych
 
----
+--
 ## Instalacja Selenium w C#
 1. Utwórz nowy projekt testowy (NUnit/xUnit)
 2. Zainstaluj wymagane paczki NuGet:
@@ -24,43 +24,49 @@ dotnet add package Selenium.WebDriver.ChromeDriver
 ## Lokalizowanie elementów
 - Po ID, Name, Class, XPath, CSS Selector
 
----
+--
 ### Wyszukiwanie po ID
 - Najczęstszy sposób, gdy element ma unikalny identyfikator.
 ```csharp
 IWebElement element = driver.FindElement(By.Id("loginBtn"));
 ```
 --
-### Ćwiczenie
-- Znajdź przycisk logowania po ID i wypisz jego tekst.
----
 ### Wyszukiwanie po Name
 - Używane, gdy element ma atrybut `name`.
 ```csharp
 IWebElement element = driver.FindElement(By.Name("username"));
 ```
 --
-### Ćwiczenie
-- Znajdź pole użytkownika po Name i wpisz tekst.
----
 ### Wyszukiwanie po XPath
 - Pozwala na zaawansowane wyszukiwanie wg struktury DOM.
 ```csharp
-IWebElement element = driver.FindElement(By.XPath("//input[@type='password']"));
+IWebElement element = 
+driver.FindElement(By.XPath("//input[@type='password']"));
 ```
 --
-### Ćwiczenie
-- Znajdź pole hasła po XPath i wpisz tekst.
----
 ### Wyszukiwanie po CSS Selector
 - Umożliwia wyszukiwanie wg selektorów CSS.
 ```csharp
-IWebElement element = driver.FindElement(By.CssSelector(".form-login .submit-btn"));
+IWebElement element = 
+driver.FindElement(By.CssSelector(".form-login .submit-btn"));
 ```
 --
-### Ćwiczenie
-- Znajdź przycisk submit po CSS Selector i kliknij go.
----
+### Wyszukiwanie Elementu w Elemencie
+Możemy szukać elementu w elemencie
+```csharp
+IWebElement element = driver
+    .FindElement(By.CssSelector(".form-login"))
+    .FindElement(By.XPath("//input[@type='submit']"));
+```
+--
+### Znajdź wiele elementów
+`FindElements()` zwraca **listę** (więcej niż jeden)
+```csharp
+List<IWebElement> allButtonsOnPage = 
+driver.FindElements(By.Xpath("//button"));
+
+```
+--
 ## Automatyzacja formularza demo
 - Użyjemy oficjalnej strony demo Selenium
 - Pokażemy różne typy interakcji z elementami

@@ -1,10 +1,10 @@
 # Waity w Selenium i C#
----
+--
 ## Cykl życia elementów w DOM
 - Elementy na stronie mogą pojawiać się, znikać lub zmieniać się dynamicznie.
 - Testy automatyczne muszą uwzględniać opóźnienia ładowania i asynchroniczne zmiany.
 - Stosowanie "waitów" pozwala na stabilne i niezawodne testy.
----
+--
 ## Rodzaje waitów w Selenium
 - Selenium oferuje kilka mechanizmów oczekiwania na elementy:
 --

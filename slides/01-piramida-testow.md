@@ -36,8 +36,8 @@ Który poziom testów spełnia wszystkie te zasady?
 
 --
 ## Które wybrać?
-To jak byśmy podzielili procentowo ilość testów w piramidzie (UT/IT/E2E)?
-- 30/30/40
-- 50/10/40
-- 10/10/80
-- 70/20/10
+Jak podzielić procentowo ilość testów (<span style="color:rgb(213,247,231)">UT</span>/<span style="color:rgb(207, 223, 255)">IT</span>/<span style="color:rgb(254,250,205)">E2E</span>)?
+- <span style="color:rgb(213,247,231)">30%</span>/<span style="color:rgb(207, 223, 255)">30%</span>/<span style="color:rgb(254,250,205)">40%</span>
+- <span style="color:rgb(213,247,231)">50%</span>/<span style="color:rgb(207, 223, 255)">10%</span>/<span style="color:rgb(254,250,205)">40%</span>
+- <span style="color:rgb(213,247,231)">10%</span>/<span style="color:rgb(207, 223, 255)">10%</span>/<span style="color:rgb(254,250,205)">80%</span>
+- <span style="color:rgb(213,247,231)">70%</span>/<span style="color:rgb(207, 223, 255)">10%</span>/<span style="color:rgb(254,250,205)">10%</span>

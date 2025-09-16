@@ -1,10 +1,10 @@
 # CSS Selectory i XPath - Praktyczny przewodnik
----
+--
 ## Wprowadzenie
 - CSS Selectory i XPath to dwa najpopularniejsze sposoby lokalizowania elementów
 - Każda metoda ma swoje zalety i zastosowania
 - Zrozumienie obu jest kluczowe dla efektywnej automatyzacji
----
+--
 ## CSS Selektory - podstawy
 ### Podstawowe selektory:
 ```html
@@ -18,7 +18,7 @@
 - `.container` - po klasie (często używane)
 - `input` - po nazwie tagu (zbyt ogólne)
 - `[name="username"]` - po atrybucie (dokładne)
----
+--
 
 ### Zaawansowane selektory CSS:
 ```html
@@ -36,7 +36,7 @@
   - `div input` - dowolny potomek
   - `label + input` - następny element
   - `label ~ input` - kolejny element tego samego rodzica
----
+--
 ## XPath - struktura i funkcje
 ```html
 <form id="loginForm">
@@ -46,12 +46,11 @@
     </div>
 </form>
 ```
-- Ścieżki:
   - `/html/body/form` - ścieżka bezwzględna (unikać!)
   - `//form` - dowolny form na stronie
   - `//input[@type="text"]` - input o zadanym atrybucie
   - `//form[@id="loginForm"]//input` - input wewnątrz forma
----
+--
 ### Zaawansowane funkcje XPath:
 - Operatory:
   - `and`, `or`, `not()` - operatory logiczne
@@ -86,18 +85,18 @@ $$('input[name="username"]')
 $x('//input[@name="username"]')
 $x('//button[contains(text(), "Login")]')
 ```
----
+--
 ### Optymalizacja selektorów:
 1. Szukaj unikalnych atrybutów:
-   - ID jest najlepsze
+   - ID jest najlepsze (bo unikalne)
    - Łącz atrybuty dla większej precyzji
    - Unikaj indeksów i pozycji
-
+--
 2. Testuj odporność na zmiany:
    - Sprawdź przy różnych stanach strony
    - Weryfikuj przy różnych danych
    - Testuj na różnych rozdzielczościach
-
+--
 3. Debugowanie:
    - Użyj konsoli do szybkich testów
    - Sprawdź, czy selektor jest unikalny
