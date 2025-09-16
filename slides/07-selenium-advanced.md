@@ -1,9 +1,9 @@
 # Zaawansowane funkcje Selenium
----
+--
 ## Wprowadzenie
 - Selenium oferuje wiele zaawansowanych możliwości dla profesjonalnych testów automatycznych.
 - Poznaj wybrane funkcje, które usprawnią Twoje testy.
----
+--
 ## Robienie screenshotów
 - Możesz zapisać zrzut ekranu strony lub elementu.
 
@@ -13,8 +13,8 @@
 - Przydatne do debugowania i raportowania błędów.
 --
 ### Ćwiczenie
-- Dodaj zrzut ekranu po nieudanym teście logowania.
----
+- Dodaj zrzut ekranu w teście.
+--
 ## Zewnętrzna konfiguracja testów
 - Używaj plików konfiguracyjnych (np. JSON, XML, appsettings) do parametrów testów.
 - Pozwala łatwo zmieniać adresy URL, dane logowania, timeouty bez modyfikacji kodu.
@@ -41,7 +41,7 @@ public class HomePage : LoadableComponent<HomePage> {
     }
 }
 ```
----
+--
 ## Selenium Actions API
 - Actions pozwala na wykonywanie złożonych interakcji z przeglądarką
 - Symuluje zachowania użytkownika jak scroll, drag&drop, hover
@@ -52,7 +52,7 @@ actions.Click(element).Perform();
 actions.DoubleClick(element).Perform();
 actions.ContextClick(element).Perform(); // prawy przycisk myszy
 ```
----
+--
 ## Infinite Scroll - automatyzacja
 - Wiele nowoczesnych stron używa infinite scroll
 - Należy symulować przewijanie i czekać na załadowanie nowych elementów
@@ -90,7 +90,7 @@ public void ShouldBeAbleToScrollUntilTenthParagraph()
 // Scroll o określoną wartość
 actions.MoveToElement(element).SendKeys(Keys.PageDown).Perform();
 ```
----
+--
 ## Drag and Drop
 - Przydatne w testach interfejsów z przeciągnij i upuść
 
@@ -114,7 +114,7 @@ public void TestDragAndDrop()
 ### Ćwiczenie
 - Przetestuj drag and drop na stronie demo
 - Dodaj weryfikację pozycji elementów
----
+--
 ## Hover i kontekstowe menu
 - Symulacja najechania myszą i menu kontekstowego
 
