@@ -52,3 +52,8 @@ devTools.Network.Enable();
 devTools.Network.SetBlockedURLs(new List<string>{"*.ads.com"});
 ```
 - Umożliwia zaawansowane testy i debugowanie.
+--
+## Ćwiczenie
+Przeanalizuj framework testowy z BDD + TestSettings.
+[Github](https://github.com/misiekofski/dotNetSeleniumTestingFramework/)
+[ZIP](./downloads/dotNetSeleniumTestingFramework-main.zip)
