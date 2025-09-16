@@ -38,7 +38,6 @@
   - `label ~ input` - kolejny element tego samego rodzica
 ---
 ## XPath - struktura i funkcje
-### Podstawowa składnia:
 ```html
 <form id="loginForm">
     <div class="form-group">
@@ -47,7 +46,6 @@
     </div>
 </form>
 ```
-
 - Ścieżki:
   - `/html/body/form` - ścieżka bezwzględna (unikać!)
   - `//form` - dowolny form na stronie
@@ -65,8 +63,8 @@
 //input[not(@disabled)]
 //tr[position() > 1]
 ```
-
-### Osie XPath:
+--
+### Względne lokatory XPath:
 - `parent::` - rodzic
 - `child::` - dzieci
 - `following-sibling::` - następne elementy
@@ -114,15 +112,11 @@ $x('//button[contains(text(), "Login")]')
    - XPath
    - Porównaj ich czytelność
 --
-### Ćwiczenie 2: Selektory dynamiczne
-1. Znajdź elementy generowane dynamicznie
-2. Napisz selektory odporne na zmiany
-3. Przetestuj przy różnych stanach strony
+### Ćwiczenie 2: CSS Selectors
+[CSS diner](https://flukeout.github.io/)
 --
-### Ćwiczenie 3: Debugowanie
-1. Celowo napisz niepoprawny selektor
-2. Użyj DevTools do znalezienia problemu
-3. Napraw i zoptymalizuj selektor
+### Ćwiczenie 3: XPath
+[XPATH diner](https://topswagcode.com/xpath/)
 
 ---
 ## Podsumowanie i dobre praktyki
@@ -133,7 +127,7 @@ $x('//button[contains(text(), "Login")]')
 2. Optymalizacja:
    - Używaj ID gdy możliwe
    - Unikaj bezwzględnych ścieżek
-   - Testuj na różnych stanach
+   - Testuj na różnych stanach (rozdzielczościach)
 --
 3. Utrzymanie:
    - Dokumentuj skomplikowane selektory

@@ -41,9 +41,6 @@ public class HomePage : LoadableComponent<HomePage> {
     }
 }
 ```
---
-### Ćwiczenie
-- Zaimplementuj LoadableComponent dla strony logowania.
 ---
 ## Selenium 4.7+ BIDI i DevTools
 - Nowe API pozwala na komunikację z przeglądarką przez BiDi (Bidirectional Protocol).
@@ -55,9 +52,3 @@ devTools.Network.Enable();
 devTools.Network.SetBlockedURLs(new List<string>{"*.ads.com"});
 ```
 - Umożliwia zaawansowane testy i debugowanie.
---
-### Ćwiczenie
-- Przechwyć logi sieciowe podczas testu wyszukiwania.
----
-## Black Hole Proxy Pattern
-TBD

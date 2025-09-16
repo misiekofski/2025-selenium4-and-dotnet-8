@@ -35,11 +35,11 @@ public class LoginPage {
 [Test]
 public void LoginTest() {
     var loginPage = new LoginPage(driver);
-    loginPage.EnterUsername("user");
-    loginPage.EnterPassword("pass");
-    loginPage.ClickLogin();
+    loginPage.LoginAs("user", "pass");
 }
 ```
 --
 ### Ćwiczenie
-- Przepisz istniejący test, aby używał POM.
+Utwórzmy PageObjectModel dla stron:
+- [https://www.saucedemo.com/](https://www.saucedemo.com/)
+- [https://www.saucedemo.com/inventory.html](https://www.saucedemo.com/inventory.html)
