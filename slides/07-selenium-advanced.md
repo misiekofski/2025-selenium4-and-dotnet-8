@@ -3,8 +3,6 @@
 ## Wprowadzenie
 - Selenium oferuje wiele zaawansowanych możliwości dla profesjonalnych testów automatycznych.
 - Poznaj wybrane funkcje, które usprawnią Twoje testy.
-
-> Notatka: Zachęć kursantów do eksperymentowania z nowymi API Selenium.
 ---
 ## Robienie screenshotów
 - Możesz zapisać zrzut ekranu strony lub elementu.

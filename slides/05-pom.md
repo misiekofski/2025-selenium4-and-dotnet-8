@@ -5,7 +5,6 @@
 - Enkapsuluje elementy strony i akcje
 - Poprawia czytelność i łatwość utrzymania
 
-> Notatka: Podkreśl znaczenie czystej architektury testów.
 ---
 ## Struktura POM
 - Klasy stron dla każdej podstrony
@@ -48,5 +47,3 @@ public void LoginTest() {
 --
 ### Ćwiczenie
 - Przepisz istniejący test, aby używał POM.
-
-> Notatka: Zachęć do rozdzielania logiki testów od szczegółów strony.

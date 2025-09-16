@@ -4,8 +4,6 @@
 - Behavior Driven Development (Rozwój sterowany zachowaniem)
 - Współpraca programistów, testerów i biznesu
 - Scenariusze testowe w języku naturalnym
-
-> Notatka: Pokaż jak BDD łączy komunikację między zespołami.
 ---
 ## SpecFlow - przegląd
 - Framework BDD dla C#
@@ -50,5 +48,3 @@ public void WhenUserEntersValidCredentials() {
 --
 ### Ćwiczenie
 - Zautomatyzuj scenariusz wyszukiwania z użyciem SpecFlow i Selenium.
-
-> Notatka: Omów jak BDD poprawia pokrycie testami i współpracę.
