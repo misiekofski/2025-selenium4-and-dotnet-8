@@ -4,8 +4,6 @@
 - CSS Selectory i XPath to dwa najpopularniejsze sposoby lokalizowania elementów
 - Każda metoda ma swoje zalety i zastosowania
 - Zrozumienie obu jest kluczowe dla efektywnej automatyzacji
-
-> Notatka: Rozpocznij od pokazania narzędzi deweloperskich (F12) w przeglądarce.
 ---
 ## CSS Selektory - podstawy
 ### Podstawowe selektory:
@@ -20,6 +18,7 @@
 - `.container` - po klasie (często używane)
 - `input` - po nazwie tagu (zbyt ogólne)
 - `[name="username"]` - po atrybucie (dokładne)
+---
 
 ### Zaawansowane selektory CSS:
 ```html
@@ -37,13 +36,6 @@
   - `div input` - dowolny potomek
   - `label + input` - następny element
   - `label ~ input` - kolejny element tego samego rodzica
-
-- Pseudoklasy:
-  - `:first-child` - pierwszy element
-  - `:last-child` - ostatni element
-  - `:nth-child(2)` - element o danym indeksie
-  - `:not(.error)` - negacja
-  - `:contains("tekst")` - zawiera tekst
 ---
 ## XPath - struktura i funkcje
 ### Podstawowa składnia:
@@ -61,7 +53,7 @@
   - `//form` - dowolny form na stronie
   - `//input[@type="text"]` - input o zadanym atrybucie
   - `//form[@id="loginForm"]//input` - input wewnątrz forma
-
+---
 ### Zaawansowane funkcje XPath:
 - Operatory:
   - `and`, `or`, `not()` - operatory logiczne
@@ -89,14 +81,14 @@
 3. Eksperymentuj w konsoli:
 ```javascript
 // Testowanie CSS Selektorów
-$('.my-class') 
-$('input[name="username"]')
+$$('.my-class') 
+$$('input[name="username"]')
 
 // Testowanie XPath
 $x('//input[@name="username"]')
 $x('//button[contains(text(), "Login")]')
 ```
-
+---
 ### Optymalizacja selektorów:
 1. Szukaj unikalnych atrybutów:
    - ID jest najlepsze
@@ -121,12 +113,12 @@ $x('//button[contains(text(), "Login")]')
    - Selektor CSS
    - XPath
    - Porównaj ich czytelność
-
+--
 ### Ćwiczenie 2: Selektory dynamiczne
 1. Znajdź elementy generowane dynamicznie
 2. Napisz selektory odporne na zmiany
 3. Przetestuj przy różnych stanach strony
-
+--
 ### Ćwiczenie 3: Debugowanie
 1. Celowo napisz niepoprawny selektor
 2. Użyj DevTools do znalezienia problemu
@@ -137,15 +129,13 @@ $x('//button[contains(text(), "Login")]')
 1. Wybór metody:
    - CSS dla prostych przypadków
    - XPath dla złożonych scenariuszy
-
+--
 2. Optymalizacja:
    - Używaj ID gdy możliwe
    - Unikaj bezwzględnych ścieżek
    - Testuj na różnych stanach
-
+--
 3. Utrzymanie:
    - Dokumentuj skomplikowane selektory
    - Regularnie weryfikuj działanie
    - Aktualizuj przy zmianach w aplikacji
-
-> Notatka: Zachęć kursantów do eksperymentowania i tworzenia własnej biblioteki przydatnych selektorów.

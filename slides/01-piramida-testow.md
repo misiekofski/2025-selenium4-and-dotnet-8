@@ -2,7 +2,7 @@
 Autor: Michał Dobrzycki
 ---
 ## Piramida testów
-![Piramida testów](../img/piramida.jpg "Piramida testów")
+![Piramida testów](./img/piramida.jpg "Piramida testów")
 
 --
 ## Testy jednostkowe
