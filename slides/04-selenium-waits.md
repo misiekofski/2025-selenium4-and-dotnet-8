@@ -7,7 +7,7 @@
 ---
 ## Rodzaje waitów w Selenium
 - Selenium oferuje kilka mechanizmów oczekiwania na elementy:
----
+--
 ### Implicit Wait
 - Ustawiany globalnie dla WebDriver.
 - Powoduje, że driver czeka określony czas na pojawienie się elementu.
@@ -18,7 +18,7 @@ WebDriver driver = new ChromeDriver();
 driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
 ```
 - Uwaga: Może prowadzić do nieoczekiwanych opóźnień w całym teście.
----
+--
 ### Explicit Wait
 - Czeka na spełnienie konkretnego warunku dla danego elementu.
 - Najczęściej używany z WebDriverWait i ExpectedConditions.
@@ -28,7 +28,7 @@ WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
 IWebElement element = wait.Until(drv => drv.FindElement(By.Id("loginBtn")));
 ```
 - Pozwala na precyzyjne sterowanie oczekiwaniem.
----
+--
 ### Fluent Wait
 - Rozszerzenie explicit wait z dodatkowymi opcjami:
   - Częstotliwość sprawdzania
@@ -42,7 +42,7 @@ DefaultWait<IWebDriver> fluentWait = new DefaultWait<IWebDriver>(driver) {
 };
 IWebElement element = fluentWait.Until(drv => drv.FindElement(By.Id("loginBtn")));
 ```
----
+--
 ## Kiedy stosować poszczególne waity?
 - Implicit Wait: dla prostych, statycznych stron.
 - Explicit/Fluent Wait: dla dynamicznych aplikacji, AJAX, SPA.

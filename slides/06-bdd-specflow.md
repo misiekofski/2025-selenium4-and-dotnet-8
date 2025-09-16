@@ -7,16 +7,16 @@
 
 --
 ## Przed BDD
-![Przed BDD](./img/bdd-1.jpg "Przed BDD")
+![Przed BDD](./img/bdd-1.png "Przed BDD")
 --
 ## BDD
-![W trakcie BDD](./img/bdd-2.jpg "BDD 2")
+![W trakcie BDD](./img/bdd-2.png "BDD 2")
 --
 ## BDD
-![W trakcie BDD](./img/bdd-3.jpg "BDD 2")
+![W trakcie BDD](./img/bdd-3.png "BDD 2")
 --
 ## BDD
-![W trakcie BDD](./img/bdd-4.jpg "BDD 2")
+![W trakcie BDD](./img/bdd-4.png "BDD 2")
 
 ---
 ## Reqnroll - przegląd

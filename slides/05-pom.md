@@ -5,7 +5,7 @@
 - Enkapsuluje elementy strony i akcje
 - Poprawia czytelność i łatwość utrzymania
 
----
+--
 ## Struktura POM
 - Klasy stron dla każdej podstrony
 - Metody dla akcji (np. logowanie, wyszukiwanie)
@@ -24,12 +24,9 @@ public class LoginPage {
 }
 ```
 --
-### Ćwiczenie
-- Utwórz obiekt strony dla wyszukiwarki z metodami wpisywania zapytania i zatwierdzania.
----
 ## Użycie POM w testach
 - Tworzenie obiektów stron w klasach testowych
-- Wywoływanie metod strony do akcji
+- Wywoływanie metod strony do interakcji
 
 ```csharp
 [Test]
@@ -40,6 +37,6 @@ public void LoginTest() {
 ```
 --
 ### Ćwiczenie
-Utwórzmy PageObjectModel dla stron:
+Utwórzmy PageObjectModel dla dwóch stron:
 - [https://www.saucedemo.com/](https://www.saucedemo.com/)
 - [https://www.saucedemo.com/inventory.html](https://www.saucedemo.com/inventory.html)
