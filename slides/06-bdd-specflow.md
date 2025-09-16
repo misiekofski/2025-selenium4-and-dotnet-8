@@ -1,14 +1,30 @@
-# BDD z SpecFlow
+# BDD z Reqnroll
 ---
 ## Czym jest BDD?
 - Behavior Driven Development (Rozwój sterowany zachowaniem)
 - Współpraca programistów, testerów i biznesu
 - Scenariusze testowe w języku naturalnym
+
+--
+## Przed BDD
+![Przed BDD](./img/bdd-1.jpg "Przed BDD")
+--
+## BDD
+![W trakcie BDD](./img/bdd-2.jpg "BDD 2")
+--
+## BDD
+![W trakcie BDD](./img/bdd-3.jpg "BDD 2")
+--
+## BDD
+![W trakcie BDD](./img/bdd-4.jpg "BDD 2")
+
 ---
-## SpecFlow - przegląd
+## Reqnroll - przegląd
 - Framework BDD dla C#
 - Składnia Gherkin (`Given`, `When`, `Then`)
-- Integracja z Selenium
+- Integracja z Visual Studio
+
+[Reqnroll](https://reqnroll.net/)
 
 ```gherkin
 Feature: Login
@@ -19,7 +35,7 @@ Feature: Login
 ```
 --
 ### Ćwiczenie
-- Napisz plik feature dla wyszukiwania produktu.
+- Napisz plik feature dla przelewu bankowego
 ---
 ## Definicje kroków
 - Mapowanie kroków Gherkin na metody C#

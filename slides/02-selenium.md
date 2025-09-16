@@ -5,7 +5,6 @@
 - Wspiera wiele języków (C#, Java, Python)
 - Automatyzuje testowanie aplikacji webowych
 
-> Notatka: Selenium to standard w automatyzacji testów web.
 ---
 ## Instalacja Selenium w C#
 1. Utwórz nowy projekt testowy (NUnit/xUnit)
@@ -16,8 +15,6 @@ dotnet add package Selenium.WebDriver
 dotnet add package Selenium.Support
 dotnet add package Selenium.WebDriver.ChromeDriver
 ```
-
-> Notatka: ChromeDriver zostanie automatycznie pobrany i skonfigurowany.
 --
 ### Ćwiczenie
 - Utwórz nowy projekt testowy
